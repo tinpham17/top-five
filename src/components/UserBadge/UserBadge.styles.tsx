@@ -27,4 +27,5 @@ export const Name = styled.div`
 export const Location = styled.div`
   margin-top: 8px;
   font-size: 14px;
+  color: #7c7c7c;
 `

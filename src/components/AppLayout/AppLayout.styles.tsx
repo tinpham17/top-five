@@ -14,7 +14,7 @@ export const Topbar = styled.div`
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(216, 216, 216);
   box-shadow: rgb(216 216 216) 0px 0px 0px;
-  padding: 0 16px;
+  padding: 0 8px;
 `
 
 export const Title = styled.div`
@@ -30,6 +30,8 @@ export const Title = styled.div`
 export const Action = styled.div`
   z-index: 1;
   color: rgb(0, 122, 255);
+  display: flex;
+  align-items: center;
   &:hover {
     cursor: pointer;
     color: rgb(25 135 255);
