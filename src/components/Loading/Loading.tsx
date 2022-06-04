@@ -9,7 +9,6 @@ const Wrapper = styled.div`
 export const Loading: React.FC = () => {
   return (
     <Wrapper>
-      Loading
     </Wrapper>
   )
 }

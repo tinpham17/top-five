@@ -1,5 +1,5 @@
 import { UserItem } from './UserItem'
-import { Wrapper } from './UserList.styles'
+import { Description, Heading, List, Wrapper } from './UserList.styles'
 
 export interface UserListProps {
   names: string[]
@@ -9,13 +9,17 @@ export interface UserListProps {
 export function UserList(props: UserListProps) {
   return (
     <Wrapper>
-      {props.names.map((name, index) => (
-        <UserItem
-          key={index}
-          name={name}
-          onClick={() => props.onClickName(name)}
-        />
-      ))}
+      <Heading>Top 5 Github users</Heading>
+      <Description>Tap the username to see more information</Description>
+      <List>
+        {props.names.map((name, index) => (
+          <UserItem
+            key={index}
+            name={name}
+            onClick={() => props.onClickName(name)}
+          />
+        ))}
+      </List>
     </Wrapper>
   )
 }
