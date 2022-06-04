@@ -20,7 +20,7 @@ export const Topbar = styled.div`
 export const Title = styled.div`
   color: rgb(28, 28, 30);
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   position: absolute;
   left: 0;
   right: 0;

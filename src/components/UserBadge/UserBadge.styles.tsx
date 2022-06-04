@@ -6,10 +6,10 @@ export const Wrapper = styled.div`
   align-items: center;
 `
 
-export const Avatar = styled.div<{ src: string }>`
+export const Avatar = styled.div<{ src: any | undefined }>`
   height: 50px;
-  width: 50px; 
-  border-radius: 50%;
+  width: 50px;
+  border-radius: 20%;
   background: url(${props => props.src});
   background-size: cover;
   background-position: center;

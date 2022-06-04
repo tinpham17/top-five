@@ -6,6 +6,7 @@ import { RoutePath } from 'settings'
 import { Home } from 'pages/Home'
 import { Person } from 'pages/Person'
 import 'normalize.css'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

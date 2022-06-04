@@ -1,8 +1,12 @@
 # Top Five
 
-Top Github user board.
+This app shows top Github users.
 
 Live preview: https://top-five-tinpham.vercel.app/
+
+**Notes**:
+
+- If you see `Oops` screen, maybe the call to Github public API got `403 - API rate limit exceeded`
 
 ## Available Scripts
 
