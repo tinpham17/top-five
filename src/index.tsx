@@ -2,7 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
 import { RoutePath } from 'settings'
+import { theme } from 'theme'
 import { Home } from 'pages/Home'
 import { Person } from 'pages/Person'
 import 'normalize.css'
@@ -13,12 +15,14 @@ const root = ReactDOM.createRoot(
 )
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path={RoutePath.HOME} element={<Home/>} />
-        <Route path={`${RoutePath.PERSON}/:username`} element={<Person/>} />
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Routes>
+          <Route path={RoutePath.HOME} element={<Home/>} />
+          <Route path={`${RoutePath.PERSON}/:username`} element={<Person/>} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 )
 

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   height: 100vh;
-  background-color: #f2f2f2;
+  background-color: ${props => props.theme.colors.neutral};
   font-family: Arial, Helvetica, sans-serif;
 `
 
@@ -11,10 +11,10 @@ export const Topbar = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 64px;
-  background-color: rgb(255, 255, 255);
+  background-color: ${props => props.theme.colors.bright};
   border-bottom: 1px solid rgb(216, 216, 216);
   box-shadow: rgb(216 216 216) 0px 0px 0px;
-  padding: 0 8px;
+  padding: 0 ${props => props.theme.spaces[2]};
 `
 
 export const Title = styled.div`
@@ -29,12 +29,15 @@ export const Title = styled.div`
 
 export const Action = styled.div`
   z-index: 1;
-  color: rgb(0, 122, 255);
+  color: ${props => props.theme.colors.primary};
   display: flex;
   align-items: center;
   &:hover {
     cursor: pointer;
-    color: rgb(25 135 255);
+    filter: brightness(1.10);
+  }
+  &:active {
+    filter: brightness(0.90);
   }
 `
 
