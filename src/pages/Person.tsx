@@ -43,7 +43,7 @@ export function Person() {
       hasBack
       onClickBack={goBack}
     >
-      <UserBadge user={data} />
+      {data && <UserBadge user={data} />}
     </AppLayout>
   )
 }
